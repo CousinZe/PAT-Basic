@@ -10,11 +10,11 @@ static unsigned roommate_count;
 static void InitStudent(Student st)
 {
     scanf("%s%u%u%u%u",
-            st->name,
-            &(st->age),
-            &(st->score_C),
-            &(st->score_AM),
-            &(st->score_EN));    
+           st->name,
+           &(st->age),
+           &(st->score_C),
+           &(st->score_AM),
+           &(st->score_EN));    
 }
 
 void InitAccommodiation()
@@ -89,24 +89,24 @@ static int predicate_by_avg_score(const void *a, const void *b)
 void SortByAge()
 {
     qsort(roommates,
-	  roommate_count,
-	  sizeof(Student),
-	  predicate_by_age);
+	        roommate_count,
+	        sizeof(Student),
+	        predicate_by_age);
 }
 
 void SortByScoreOfC()
 {
     qsort(roommates,
-	  roommate_count,
-	  sizeof(Student),
-	  predicate_by_score_of_C);
+	        roommate_count,
+	        sizeof(Student),
+       	  predicate_by_score_of_C);
 }
 
 void SortByScoreOfAvg()
 {
     qsort(roommates,
-	  roommate_count,
- 	  sizeof(Student),
-	  predicate_by_avg_score);
+	        roommate_count,
+ 	        sizeof(Student),
+	        predicate_by_avg_score);
 }
 

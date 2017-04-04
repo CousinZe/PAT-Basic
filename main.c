@@ -6,17 +6,17 @@
 
 int main()
 {
-	InitAccommodiation();
+    InitAccommodiation();
 
-	SortByAge();
-	ListPrint();
+	  SortByAge();
+	  ListPrint();
 
-	SortByScoreOfC();
-	ListPrint();
+	  SortByScoreOfC();
+	  ListPrint();
 
-	SortByScoreOfAvg();
-	ListPrint();
+	  SortByScoreOfAvg();
+	  ListPrint();
 
-	CleanUp();
-	return 0;
+	  CleanUp();
+	  return 0;
 }
