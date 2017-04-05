@@ -19,12 +19,16 @@ static void InitStudent(Student st)
 
 void InitAccommodiation()
 {
+    printf("How many students? ");
     scanf("%u", &roommate_count);
 
     roommates = (Student*)malloc((roommate_count) * sizeof(Student));
 
     for (size_t i = 0; i < roommate_count; i++)
     {
+        printf("Please input the %uth student's info\n", i+1);
+        printf("Pattern : name age score_C score_AM score_EN\n");
+
         roommates[i] = (Student)malloc(sizeof(struct student));
         InitStudent(roommates[i]);
     }
